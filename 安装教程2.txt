@@ -1,0 +1,19 @@
+根目录bbs.52jscn.com这个文件不要删除，如果删除先破解限制，如果删除不能安装。
+
+
+1.先导入数据库，根目录下有demo.sql文件，导入到自己的数据库中，推荐两种方式，第一用Navicat软件导入，方便快捷；第二种就是用帝国备份王恢复数据库，程序中自带，访问http://您的域名/diguo进行恢复，登录账号和密码分别是admin和bbs.52jscn.com（点击查看图文教程）。其余方式可以参照自己主机商提供的还原工具；
+
+2.用EditPlus等编辑软件打开config/hopeconfig.php文件，修改里面的数据库信息，里面我标注了；
+
+3.还是打开config/hopeconfig.php文件,修改你的站点地址，把localhost改为你的域名
+
+  \'siteurl\' => \'http://localhost\',
+  \'imgserver\' => \'http://localhost\',
+  \'https\' => \'https://localhost\',（必须开启SSL，也就是https，否则IOS苹果系统无法获取定位）
+  \'website\' => \'http://localhost\',
+
+3.登录网站后台，直接访问http://您的域名/52jscn.php自动访问后台（我给做的一个跳转界面，安全起见可以自己修改成别的文件名称），账号和密码分别是admin和bbs.52jscn.com
+
+4.程序开源，建议选PHP5.2环境，这样程序打开访问的速度会很快。
+
+5.微信端可以直接对接微信或者调用http://您的域名/index.php?ctrl=wxsite 这个地址也是手机端的网址，大家灵活调用
